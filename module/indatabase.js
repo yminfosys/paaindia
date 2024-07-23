@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 //mongoose.set('useFindAndModify', false);
-autoIncrement = require('mongoose-auto-increment');
+//autoIncrement = require('mongoose-auto-increment');
 const config = {
   autoIndex: false,
   useNewUrlParser: true,
@@ -57,7 +57,7 @@ mongoose.connection.on('error', err => {
   setTimeout(mongCon,20000);
   
 });
-autoIncrement.initialize(mongoose.connection);
+//autoIncrement.initialize(mongoose.connection);
 
 ////customer Schema
 var custSchema = new mongoose.Schema({ 
@@ -109,7 +109,7 @@ var custSchema = new mongoose.Schema({
     cityWeakEndMultiplyer:[]
 });
 
-custSchema.plugin(autoIncrement.plugin, { model: 'incustcollections', field: 'CustID',startAt: 1000, incrementBy: 1 });
+//custSchema.plugin(autoIncrement.plugin, { model: 'incustcollections', field: 'CustID',startAt: 1000, incrementBy: 1 });
 
 var custmodul = mongoose.model('incustcollections', custSchema);
 
@@ -215,7 +215,7 @@ var pilotSchema = new mongoose.Schema({
   // }
 });
 
-pilotSchema.plugin(autoIncrement.plugin, { model: 'inpilotcollections', field: 'pilotID',startAt: 1000, incrementBy: 1 });
+//pilotSchema.plugin(autoIncrement.plugin, { model: 'inpilotcollections', field: 'pilotID',startAt: 1000, incrementBy: 1 });
 
 var pilotmodul = mongoose.model('inpilotcollections', pilotSchema);
 
@@ -238,7 +238,7 @@ var drivernotfoundSchema = new mongoose.Schema({
  status:String,
 date: { type: Date, default: Date.now },  
 });
-drivernotfoundSchema.plugin(autoIncrement.plugin, { model: 'indrivernotfoundcollections', field: 'entryNo',startAt: 1, incrementBy: 1 });
+//drivernotfoundSchema.plugin(autoIncrement.plugin, { model: 'indrivernotfoundcollections', field: 'entryNo',startAt: 1, incrementBy: 1 });
 var drivernotfoundmodul = mongoose.model('indrivernotfoundcollections', drivernotfoundSchema);
 
 
@@ -272,7 +272,7 @@ var DriverPaymentSchema = new mongoose.Schema({
   ifsc:String
 
 });
-DriverPaymentSchema.plugin(autoIncrement.plugin, { model: 'indriverpaymentcollections', field: 'TransactionID',startAt: 1, incrementBy: 1 });
+//DriverPaymentSchema.plugin(autoIncrement.plugin, { model: 'indriverpaymentcollections', field: 'TransactionID',startAt: 1, incrementBy: 1 });
 var DriverPaymentmodul = mongoose.model('indriverpaymentcollections', DriverPaymentSchema);
 
 ///Driver Attendence
@@ -475,7 +475,7 @@ var priceandOfferSchema = new mongoose.Schema({
   rideIncetiv:String 
 });
 
-priceandOfferSchema.plugin(autoIncrement.plugin, { model: 'inpriceandOffercollections', field: 'offerID',startAt: 1, incrementBy: 1 });
+//priceandOfferSchema.plugin(autoIncrement.plugin, { model: 'inpriceandOffercollections', field: 'offerID',startAt: 1, incrementBy: 1 });
 var priceandOffermodul = mongoose.model('inpriceandOffercollections', priceandOfferSchema);
 
 ///City Waise Price Variation
@@ -511,7 +511,7 @@ var branchSchema = new mongoose.Schema({
   branchAddress:String
 });
 
-branchSchema.plugin(autoIncrement.plugin, { model: 'inbranchcollections', field: 'branchID',startAt: 1, incrementBy: 1 });
+//branchSchema.plugin(autoIncrement.plugin, { model: 'inbranchcollections', field: 'branchID',startAt: 1, incrementBy: 1 });
 var branchmodul = mongoose.model('inbranchcollections', branchSchema);
 
 ////Demand Area Schema
@@ -577,7 +577,7 @@ var adminSchema = new mongoose.Schema({
  
  
 });
-adminSchema.plugin(autoIncrement.plugin, { model: 'inadmincollections', field: 'adminID',startAt: 19, incrementBy: 1 });
+//adminSchema.plugin(autoIncrement.plugin, { model: 'inadmincollections', field: 'adminID',startAt: 19, incrementBy: 1 });
 var adminmodul = mongoose.model('inadmincollections', adminSchema);
 
 ////Share Ride Booking Schema
@@ -648,7 +648,7 @@ var incentiveCategorySchema = new mongoose.Schema({
   travelmod:String,
   city:String
   });
-  incentiveCategorySchema.plugin(autoIncrement.plugin, { model: 'incentivecategorycollections', field: 'enrtyID',startAt: 1, incrementBy: 1 });
+  //incentiveCategorySchema.plugin(autoIncrement.plugin, { model: 'incentivecategorycollections', field: 'enrtyID',startAt: 1, incrementBy: 1 });
   var incentiveCategorymodul = mongoose.model('incentivecategorycollections', incentiveCategorySchema);
 
 

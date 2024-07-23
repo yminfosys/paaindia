@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 //mongoose.set('useFindAndModify', false);
-autoIncrement = require('mongoose-auto-increment');
+
 const config = {
   autoIndex: false,
   useNewUrlParser: true,
@@ -46,7 +46,7 @@ mongoose.connection.on('error', err => {
   setTimeout(mongCon,20000);
   
 });
-autoIncrement.initialize(mongoose.connection);
+//autoIncrement.initialize(mongoose.connection);
 
 ////customer Schema
 var custSchema = new mongoose.Schema({ 
