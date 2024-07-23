@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <script>
+            //alert(new Date("2021-07-22T16:26:31.510Z"))
+            // var dd='2021-05-22T20:42:23'
+            // dd=new Date(dd);
+            // var today=new Date();
+            // var todaygettime=today.getTime();
+            // var ddgettim=dd.getTime();
+            // alert(""+dd+" \n" +today+" \n todaygettime:"+todaygettime+"\n ddgettim:"+ddgettim+"")
+
+            function diff_minutes(dt2, dt1) {
+                var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+                diff /= 60;
+                return Math.abs(Math.round(diff));
+                }
+
+                    dt1 = new Date("2021-07-22T20:30:23");
+                    dt2 = new Date();
+                  alert(diff_minutes(dt1, dt2));
+        </script>
+        <div class="container">
+            <div style="background-color: #facb3d;" class="row">
+                <div style="margin-top: 5px;"  class="col-xs-4 col-sm-4 col-xs-offset-4 col-sm-offset-4">
+                  <img style="width: 100%;" src="/india/images/logo/paalogo.png">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div style="margin-top: 5px;" class="panel panel-primary">
+                      <div class="panel-heading">
+                            <h3  class="panel-title"><img width="30px" src="/india/images/custLogo.png"> Paa Admin
+                                <span style="float: right; margin-top: -6px;">
+                                <button onclick="chatDisconnect()"  type="button" class="btn btn-sm btn-danger">X</button>
+                                </span>
+                            </h3>
+                      </div>
+                      <div style="height: 60vh; overflow-y: auto;" class="panel-body">
+                        <!-- <p style="text-align: right; " ><a style="background-color: rgb(137, 231, 141);">Signed in as Mark Otto  Signed in as Mark Otto  Signed in as Mark Otto</a></p>
+                        <p style="text-align: left; " ><a style="background-color: rgb(238, 230, 221);">Signed in as Mark Otto</a></p> -->
+                        <div style="float: left; width: 80%; border-radius: 5px;  background-color: rgb(238, 230, 221); ">
+                            <a style="float: left; padding: 3px; color: #000;">How May I Help You Today?</a> 
+                        </div>
+                        <div style="float: right; width: 80%;     margin-top: 10px; ">
+                            <div style="float: right; background-color: rgb(137, 231, 141); border-radius: 5px;">
+                                <a style="float: left; padding: 3px; color: #000;">Signed in as Mark jhdfjghdfj<br> hjdhfjgd jhdhf</a> 
+                            </div>
+                        </div>
+
+
+                    
+                    </div>
+                      <div  class="panel panel-default">
+                            <div class="panel-body">
+                                  Name : Sukanta Saradar
+                            </div>
+                            <div class="panel-footer">
+                                  <div class="input-group">
+                                    <textarea style="height: 40px;" id="input" class="form-control"  required="required"></textarea>
+                                      
+                                      <span class="input-group-btn">
+                                          <button style="font-size: 20px; height: 40px; color: rgb(12, 122, 67);" type="button" class="btn btn-default"><i class="fa fa-telegram" aria-hidden="true"></i></button>
+                                      </span>
+                                  </div>
+                              </div>
+                      </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
