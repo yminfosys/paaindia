@@ -91,7 +91,7 @@ var custSchema = new mongoose.Schema({
     }
 });
 
-custSchema.plugin(autoIncrement.plugin, { model: 'bdcustcollections', field: 'CustID',startAt: 1000, incrementBy: 1 });
+//custSchema.plugin(autoIncrement.plugin, { model: 'bdcustcollections', field: 'CustID',startAt: 1000, incrementBy: 1 });
 
 var custmodul = mongoose.model('bdcustcollections', custSchema);
 
@@ -163,7 +163,7 @@ var pilotSchema = new mongoose.Schema({
   }
 });
 
-pilotSchema.plugin(autoIncrement.plugin, { model: 'bdpilotcollections', field: 'pilotID',startAt: 1000, incrementBy: 1 });
+//pilotSchema.plugin(autoIncrement.plugin, { model: 'bdpilotcollections', field: 'pilotID',startAt: 1000, incrementBy: 1 });
 
 var pilotmodul = mongoose.model('bdpilotcollections', pilotSchema);
 
@@ -184,7 +184,7 @@ var DriverPaymentSchema = new mongoose.Schema({
   ifsc:String
 
 });
-DriverPaymentSchema.plugin(autoIncrement.plugin, { model: 'bddriverpaymentcollections', field: 'TransactionID',startAt: 1, incrementBy: 1 });
+//DriverPaymentSchema.plugin(autoIncrement.plugin, { model: 'bddriverpaymentcollections', field: 'TransactionID',startAt: 1, incrementBy: 1 });
 var DriverPaymentmodul = mongoose.model('bddriverpaymentcollections', DriverPaymentSchema);
 
 ///Driver Attendence
@@ -339,7 +339,7 @@ var priceandOfferSchema = new mongoose.Schema({
   rideIncetiv:String 
 });
 
-priceandOfferSchema.plugin(autoIncrement.plugin, { model: 'bdpriceandOffercollections', field: 'offerID',startAt: 1, incrementBy: 1 });
+//priceandOfferSchema.plugin(autoIncrement.plugin, { model: 'bdpriceandOffercollections', field: 'offerID',startAt: 1, incrementBy: 1 });
 var priceandOffermodul = mongoose.model('bdpriceandOffercollections', priceandOfferSchema);
 
 ///City Waise Price Variation
@@ -421,7 +421,7 @@ var adminSchema = new mongoose.Schema({
  
  
 });
-adminSchema.plugin(autoIncrement.plugin, { model: 'nadmincollections', field: 'adminID',startAt: 1, incrementBy: 1 });
+//adminSchema.plugin(autoIncrement.plugin, { model: 'nadmincollections', field: 'adminID',startAt: 1, incrementBy: 1 });
 var adminmodul = mongoose.model('bdadmincollections', adminSchema);
 
 
